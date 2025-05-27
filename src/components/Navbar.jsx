@@ -6,8 +6,8 @@ const Navbar = () => {
     const navLinks = [
         { name: 'Home', path: '/' },
         { name: 'Hotels', path: '/hotels' },
-        { name: 'Experience', path: '/experience' },
-        { name: 'About', path: '/about'},
+        { name: 'Experience', path: '/' },
+        { name: 'About', path: '/'},
     ];
 
     const location = useLocation();
@@ -70,7 +70,7 @@ const Navbar = () => {
                 ) : (
                     <button 
                         onClick={openSignIn} 
-                        className="px-6 py-2.5 rounded-full font-medium bg-white text-gray-900 hover:bg-gray-100 transition-all duration-300"
+                        className=" cursor-pointer px-6 py-2.5 rounded-full font-medium bg-white text-gray-900 hover:bg-gray-100 transition-all duration-300"
                     >
                         Login
                     </button>

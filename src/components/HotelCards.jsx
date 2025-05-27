@@ -1,11 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { assets } from '../assets/assets'
 
-function HotelCards({room, _id}) {
+function HotelCards({room}) {
+
   return (
     <Link 
-      to={"/rooms/" + _id} 
+      to={"/hotels/" + room._id} 
       onClick={() => scrollTo(0,0)} 
       className="group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
     >
@@ -48,8 +49,8 @@ function HotelCards({room, _id}) {
             <p className="text-sm text-gray-500">Starting from</p>
             <p className="text-xl font-bold text-gray-900">${room.pricePerNight}</p>
           </div>
-          <button className="px-4 py-2 bg-gray-900 text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition-colors">
-            Book Now
+          <button className="cursor-pointer px-4 py-2 bg-gray-900 text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition-colors">
+            view Details
           </button>
         </div>
       </div>
