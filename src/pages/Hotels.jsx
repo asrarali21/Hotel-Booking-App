@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { assets, facilityIcons, roomsDummyData } from '../assets/assets'
 import { useNavigate } from 'react-router-dom'
+import Footer from '../components/Footer'
 
 function Hotels() {
     const navigate = useNavigate()
@@ -17,6 +18,7 @@ function Hotels() {
     ]
 
     return (
+        <>
         <div className="min-h-screen bg-gray-50 pt-20">
             {/* Header Section */}
             <div className="bg-white shadow-sm">
@@ -155,6 +157,8 @@ function Hotels() {
                 </div>
             </div>
         </div>
+            <Footer/>
+                </>
     )
 }
 

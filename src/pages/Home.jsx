@@ -4,6 +4,7 @@ import FeaturedDestination from '../components/FeaturedDestination'
 import Exclusiveoffer from '../components/Exclusiveoffer'
 import Testimonial from '../components/Testimonial'
 import NewsLetter from '../components/NewsLetter'
+import Footer from '../components/Footer'
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
        <Exclusiveoffer/>
        <Testimonial/>
        <NewsLetter/>
+       <Footer/>
      </>
   )
 }

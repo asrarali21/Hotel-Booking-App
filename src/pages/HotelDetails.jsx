@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { assets, roomsDummyData, facilityIcons } from '../assets/assets';
+import Footer from '../components/Footer';
 
 function HotelDetails() {
     const {id} = useParams();
@@ -16,6 +17,7 @@ function HotelDetails() {
     if (!hotels) return null;
 
     return (
+<>
         <div className="min-h-screen bg-gray-50 pt-20">
             {/* Hero Section */}
             <div className="bg-white shadow-sm">
@@ -138,6 +140,8 @@ function HotelDetails() {
                 </div>
             </div>
         </div>
+        <Footer/>
+        </>
     );
 }
 
